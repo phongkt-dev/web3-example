@@ -34,6 +34,7 @@ yarn dev
 |Action|Description|
 |-|-|
 |`GET` `/balance`|Get wallet balance|
+|`GET` `/usdc-balance`|Get usdc balance via SmartContract|
 |`POST` `/transfer`|Transfer token from address in walet to another address|
 
 
@@ -58,6 +59,19 @@ Output:
     ],
     "totalBalance": 17833600000000000
   }
+}
+```
+
+#### Get USDC balance via SmartContract
+```sh
+curl --location 'http://localhost:3000/usdc-balance?address=0x778E72B05320A00cd014Cd7aB842BE866022634b'
+```
+Output:
+```
+{
+    "data": {
+        "balance": 0
+    }
 }
 ```
 
@@ -103,6 +117,5 @@ Transaction hash received
 Receipt received
 Transaction is confirmed
 ```
-
-
+  
 Thanks.
