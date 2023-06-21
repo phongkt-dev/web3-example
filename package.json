@@ -2,9 +2,11 @@
   "name": "wallet",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/index.js",
+  "main": "dist/main.js",
   "scripts": {
     "dev": "tsc -w & nodemon -r dotenv/config dist/main.js",
+    "build": "tsc",
+    "start": "node dist/main",
     "test": "exit 0"
   },
   "author": "",
