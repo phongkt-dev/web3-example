@@ -19,6 +19,7 @@ app.use('/', eventHandler(() => ({
   message: 'Available actions',
   actions: [
     "GET /balance",
+    "GET /usdc-balance",
     "POST /transfer"
   ]
 })))
